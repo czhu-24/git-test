@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+nav div {
+    display: inline;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+form input{
+    display: block;
+}
+
+form{
+    margin-bottom: 200px; /* Apply margin to the <form> element itself */
+  
+    /* Select direct children of <form> that are NOT <form> elements and set margin-bottom to 0 */
+    form > :not(form) {
+      margin-bottom: 0;
+    }
+  }
